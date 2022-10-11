@@ -16,7 +16,6 @@ public class Factorial {
         if (num == 1){return 1;}
         return num * FactorialRecursive(num -1);
     }
-
     public static int FactorialIterative(int num){
         int result = 1;
         for(int i = 1; i <= num; i++){

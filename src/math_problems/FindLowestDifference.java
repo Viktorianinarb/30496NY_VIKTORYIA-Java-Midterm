@@ -1,5 +1,6 @@
 package math_problems;
 
+
 public class FindLowestDifference {
 
     /** INSTRUCTIONS
