@@ -1,5 +1,7 @@
 package math_problems;
 
+import java.sql.SQLOutput;
+
 public class Factorial {
 
     /** INSTRUCTIONS
@@ -10,9 +12,21 @@ public class Factorial {
      * HINT: Factorial of 5! = 5 x 4 X 3 X 2 X 1 = 120
      */
 
+    public static int FactorialRecursive(int num){
+        if (num == 1){return 1;}
+        return num * FactorialRecursive(num -1);
+    }
+
+    public static int FactorialIterative(int num){
+        int result = 1;
+        for(int i = 1; i <= num; i++){
+            result *= i;
+        }
+        return result;
+    }
     public static void main(String[] args) {
-
-
+    System.out.println(FactorialRecursive(5));
+    System.out.println(FactorialIterative(5));
     }
 
 }
