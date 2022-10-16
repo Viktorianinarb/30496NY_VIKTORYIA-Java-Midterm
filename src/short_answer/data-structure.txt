@@ -1,70 +1,88 @@
 ***ANSWER ALL OF THE QUESTIONS BELOW***
 
 Why do we need data structure?
-Answer:
+Answer: Use of appropriate data structure enables a computer system tp perform its task more efficiently by influencing the ability of computer to store and retrieve data from any location in its memory. Different kind of data structures are suited to different computer applciations and tasks.
 
 What are the various operations that can be performed on different data structures?
-Answer:
+Answer: Most common are insertion of data. update of data, dada retrieval, also sorting. Data structures use different commands to perform the mentioned operations.
 
 When would we use data structures in the real world?
-Answer:
+Answer: Like stack can be applied when you simply store let's say kitchen cloth. it is based on lifo. when you need to retrieve kitchen towel you just grab the top one.
 
 What is an Array?
-Answer:
+Answer: An array is a container object that holds a fixed number of values of a single type. The length of an array is established when the array is created. After creation, its length is fixed.
 
 What is the difference between Array and ArrayList?
-Answer:
+Answer: ArrayList length can be modified. Also, ArrayList can only hold objects, not primitives. An array can hold primitives and objects both in Java, and it is static.
 
 What is a LinkedList?
-Answer:
+Answer: LinkedList is a linear data structure. However, LinkedList elements are not stored in contiguous locations like arrays, they are linked with each other using pointers. Each element of the LinkedList has the reference(address/pointer) to the next element of the LinkedList.
 
 How is an Array different from LinkedList?
-Answer:
+Answer: LinkedList elements are not stored in contiguous locations like arrays, they are linked with each other using pointers.
 
 What is a Queue?
-Answer:
+Answer: A queue is an object that represents a data structure designed to have the element inserted at the end of the queue, and the element removed from the beginning of the queue.
 
 What is a Stack (referring to data structures)?
-Answer:
+Answer: The stack is a linear data structure that is used to store the collection of objects. It is based on Last-In-First-Out (LIFO).
 
 What is FIFO and LIFO?
-Answer:
+Answer: First in first out and last in first out. It represents the order in which data is getting stored and retrieved from memory.
 
 Explain Big O Notation?
-Answer:
+Answer: It is a measure of code execution that is based on the x-time of the single operation of similar type. Big O notation is the language we use for talking about how long an algorithm takes to run. It's how we compare the efficiency of different approaches to a problem.
 
 What is the best case to search an element from an array?
-Answer:
+Answer: The best-case is when the search item appears at the beginning of the list and is O(1).
 
 What is the worst case to search an element from an array?
-Answer:
+Answer: when the search item appears at the end of the list or not at all. This would require N comparisons, hence, the worse case is O(N).
 
 Describe what a tree data structure is?
-Answer:
+Answer: A Tree is a non-linear data structure where data objects are generally organized in terms of hierarchical relationship.
 
 Describe what a graph data structure is?
-Answer:
+Answer: A graph is a data structure that stores connected data. In other words, a graph is defined as a set of vertices and edges that connects vertices.
 
 What is the difference between the HashTable and HashMap?
-Answer:
+Answer: HashMap is non-syncronized and is not thread safe while HashTable is thread safe and is synchronized. HashMap allows one null key and values can be null whereas HashTable doesn't allow null key or value. HashMap is faster than HashTable. HashMap iterator is fail-safe where HashTable iterator is not fail-safe. HashMap extends AbstractMap class where HashTable extends Dictionary class.
 
 How do HashMaps work in Java? How do they store values, and when are they useful?
-Answer:
+Answer: Java HashMap is a class which is used to perform operations such as inserting, deleting and locating elements in a map. HashMap store items in "key/value" pairs, and you can access them by an index of another type.
 
 What is ArrayIndexOutOfBoundsException in java? When does it occur?
-Answer:
+Answer: when we try to access value at the specific index and no such index exist. for example array may have 5 elements and we try to rech the element at index 10.
 
 What are the different ways of copying an array into another array?
-Answer:
+Answer: 1.Iterating each element of the given original array and copy one element at a time
+       2. Using clone() method
+       3. Using arraycopy() method
+       4. Using copyOf() method of Arrays class
+       5. Using copyOfRange() method of Arrays class
 
 What is DFS and BFS?
-Answer:
+Answer: BFS is a traversal approach in which we first walk through all nodes on the same level before moving on to the next level.  DFS is also a traversal approach in which the traverse begins at the root node and proceeds through the nodes as far as possible until we reach the node with no unvisited nearby nodes.
 
 What is Recursion?
-Answer:
+Answer: when method calls itself
 
 What are linear and non-linear data Structures?
-Answer:
+Answer: In a linear data structure, the data elements connect to each other sequentially. A user can transverse each element through a single run. In a non-linear data structure, the data elements connect to each other hierarchically.
 
 Outline different sorting algorithms and their time complexities:
-
+Algorithm	Time Complexity	Space Complexity
+ 	        Best	Average	Worst	      Worst
+Selection Sort	Ω(n^2)	θ(n^2)	O(n^2)	O(1)
+Bubble Sort	Ω(n)	θ(n^2)	O(n^2)	O(1)
+Insertion Sort	Ω(n)	θ(n^2)	O(n^2)	O(1)
+Heap Sort	Ω(n log(n))	θ(n log(n))	O(n log(n))	O(1)
+Quick Sort	Ω(n log(n))	θ(n log(n))	O(n^2)	O(n)
+Merge Sort	Ω(n log(n))	θ(n log(n))	O(n log(n))	O(n)
+Bucket Sort	Ω(n +k)	θ(n +k)	O(n^2)	O(n)
+Radix Sort	Ω(nk)	θ(nk)	O(nk)	O(n + k)
+Count Sort	Ω(n +k)	θ(n +k)	O(n +k)	O(k)
+Shell Sort	Ω(n log(n))	θ(n log(n))	O(n^2)	O(1)
+Tim Sort	Ω(n)	θ(n log(n))	O(n log (n))	O(n)
+Tree Sort	Ω(n log(n))	θ(n log(n))	O(n^2)	O(n)
+Cube Sort	Ω(n)	θ(n log(n))	O(n log(n))	O(n)
